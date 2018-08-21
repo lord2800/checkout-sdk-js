@@ -10,7 +10,7 @@ export interface BraintreePaypalButtonInitializeOptions {
     shouldProcessPayment?: boolean;
 
     container: string;
-    style?: Pick<PaypalButtonStyleOptions, 'color' | 'shape' | 'size'>;
+    style?: Pick<PaypalButtonStyleOptions, 'layout' | 'size' | 'color' | 'label' | 'shape' | 'tagline' | 'fundingicons'>;
     onAuthorizeError?(error: BraintreeError | StandardError): void;
     onPaymentError?(error: BraintreeError | StandardError): void;
 }
