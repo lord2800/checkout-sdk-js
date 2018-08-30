@@ -11,6 +11,7 @@ export interface BraintreePaypalButtonInitializeOptions {
 
     container: string;
     style?: Pick<PaypalButtonStyleOptions, 'layout' | 'size' | 'color' | 'label' | 'shape' | 'tagline' | 'fundingicons'>;
+    allowCredit?: boolean;
     onAuthorizeError?(error: BraintreeError | StandardError): void;
     onPaymentError?(error: BraintreeError | StandardError): void;
 }
